@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Running 10KM - Participar</title>
+        <!-- Metas -->
+        <meta charset="UTF-8">
+        <meta name="description" content="San Antonio de Areco, carrera de 10km">
+        <meta name="keywords" content="San Antonio de Areco, Municipalidad, Carrera">
+        <meta name="author" content="mtorre4580@outlook.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <nav class="navbar navbar-expand-lg  navbar-light navbar-areco">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/logo.png" width="200" height="80" class="d-inline-block align-top" alt="san antonio de areco, logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarAreco">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarAreco">
+                    <ul class="navbar-nav ml-auto navbar-areco">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Inicio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/participate">Participar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Main -->
+        <main class="container">
+            <!-- Form Register -->
+            <form class="form-register" id="form-register">
+                <div class="form-group row">
+                    <label for="name" class="col-sm-2 col-form-label">Nombre</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre">
+                        <p class="name_error">El campo nombre sólo puede contener letras, mínimo 3 carácteres <bold>(Campo Obligatorio)</bold></p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lastname" class="col-sm-2 col-form-label">Apellido</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="lastname" placeholder="Ingrese su apellido">
+                        <p class="lastname_error">El campo apellido sólo puede contener letras, mínimo 3 carácteres</p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="date" class="col-sm-2 col-form-label">Fecha de nacimiento</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="date_birdthay" placeholder="Ingrese su fecha de nacimiento">
+                        <p class="date_birdthay_error">El fecha no cumple el formato pedido</p>
+                    </div>
+                </div>
+                <fieldset class="form-group">
+                    <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Domicilio</legend>
+                    <div class="col-sm-10">
+                    </div>
+                    </div>
+                </fieldset>
+                <div class="form-group row">
+                    <label for="dni" class="col-sm-2 col-form-label">DNI / Pasaporte</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="dni" placeholder="Ingrese su dni o pasaporte">
+                        <p class="dni_error">El dni no cumple el formato pedido  <bold>(Campo Obligatorio)</bold></p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="country" class="col-sm-2 col-form-label">Nacionalidad</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="country" placeholder="Ingrese su nacionalidad">
+                        <p class="country_error">La nacionalidad no cumple el formato pedido</p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+                        <p class="email_error">El email no cumple el formato pedido <bold>(Campo Obligatorio)</bold></p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="phone" class="col-sm-2 col-form-label">Télefono</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" id="phone" placeholder="Ingrese su teléfono">
+                        <p class="phone_error">El télofono no cumple el formato pedido</p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="team" class="col-sm-2 col-form-label">Equipo</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="team">
+                            <option value="red">Rojo</option>
+                            <option value="green">Verde</option>
+                        </select>
+                        <p class="team_error">El equipo es obligatorio para competir</p>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="news" class="col-sm-2 col-form-label">¿Cómo se enteró?</label>
+                    <div class="col-sm-10">
+                        <div class="form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="check_socials">
+                            <label class="form-check-label" for="check_socials">Redes sociales</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="check_friends">
+                            <label class="form-check-label" for="check_friends">Amigos</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="check_others">
+                            <label class="form-check-label" for="check_others">Otros</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="comments" class="col-sm-2 col-form-label">Comentarios</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" rows="3" id="comments"></textarea>
+                        <p class="comments_error">El comentario no cumple el formato pedido</p>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Enviar</button>
+            </form>
+            <!-- Modal -->
+            <div class="modal fade" id="modal">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Notificación</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Ya estás participando en la carrera!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </main>
+        <!--- Scripts -->
+        <script src="js/participate.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

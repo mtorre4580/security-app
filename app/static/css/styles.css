@@ -1,0 +1,40 @@
+.navbar-areco { 
+    background-color: #4caf50; 
+}
+
+.jumbotron-running { 
+    background-color: #f5f5f5; 
+}
+
+#navbarAreco .nav-link { 
+    color: #f5f5f5; 
+}
+
+#navbarAreco .nav-link:hover { 
+    color: #dedede; 
+}
+
+.footer { 
+    padding: 10px;
+}
+
+textarea { 
+    resize: none; 
+}
+
+.form-register { 
+    padding: 20px 0; 
+    width: 100%; 
+}
+
+.name_error, .lastname_error, .date_birdthay_error, .dni_error, .country_error, .email_error, .phone_error, .comments_error, .team_error { 
+    display: none; 
+    color: #b91400; 
+    font-weight: bold; 
+    margin: 0; 
+    padding-top: 10px; 
+}
+
+.col-form-label {
+    font-weight: 600;
+}

@@ -1,0 +1,26 @@
+DROP DATABASE IF EXISTS municipio;
+
+CREATE DATABASE municipio;
+
+USE DATABASE municipio;
+
+CREATE TABLE participants (
+  ID INT AUTO_INCREMENT NOT NULL,
+  NAME VARCHAR(255) NOT NULL,
+  LASTNAME VARCHAR(255),
+  DATE_BIRDTHAY DATE,
+  ADRESS VARCHAR(255),
+  DNI VARCHAR(8) NOT NULL,
+  COUNTRY VARCHAR(255),
+  EMAIL VARCHAR(255) NOT NULL,
+  PHONE VARCHAR(9),
+  TEAM VARCHAR(255) NOT NULL,
+  COMMENTS TEXT,
+  PRIMARY KEY (ID) 
+);
+
+INSERT INTO participants SET NAME= 'Jorge', LASTNAME= 'Flores', DATE_BIRDTHAY= '1990-02-14', ADRESS= 'Arregui 2203', DNI= '35909404', COUNTRY= 'Argentina', EMAIL= 'jorge@gmail.com', PHONE= '4234-0434', TEAM= 'red';
+INSERT INTO participants SET NAME= 'Elena', LASTNAME= 'Ledesma', DATE_BIRDTHAY= '1989-11-01', ADRESS= 'Simbron 3000', DNI= '12702215', COUNTRY= 'Argentina', EMAIL= 'el91@gmail.com', PHONE= '4566-2234', TEAM= 'green';
+INSERT INTO participants SET NAME= 'Facundo', LASTNAME= 'Lopez', DATE_BIRDTHAY= '2000-04-27', ADRESS= 'Segurola 1000', DNI= '36903213', COUNTRY= 'Argentina', EMAIL= 'facundo_lopez@gmail.com', PHONE= '3333-0434', TEAM= 'red';
+INSERT INTO participants SET NAME= 'Belen', LASTNAME= 'Gomez', DATE_BIRDTHAY= '1991-12-11', ADRESS= 'Corrientes 800', DNI= '30393300', COUNTRY= 'Argentina', EMAIL= 'belen@gmail.com', PHONE= '4958-2384', TEAM= 'red';
+
