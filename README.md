@@ -26,6 +26,7 @@ Se utilizan expresiones regulares para validar los forms tanto en la API como de
 
 - La aplicación necesita tener el servicio de mysql corriendo, ya que se conecta para obtener los datos de los participantes.
 - Mock de datos de prueba `database.sql`
+- El certificado se creo con el siguiente comando ```openssl req -nodes -new -x509 -keyout server.key -out server.cert```
 
 ## Views App
 
