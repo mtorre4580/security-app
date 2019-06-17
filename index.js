@@ -1,12 +1,14 @@
 const express = require('express');
-const server = express();
+const https = require('https');
+const fs = require('fs');
 const bodyParser = require('body-parser');
 const errorHandler = require('./middlewares/errorHandler');
 const authHandler = require('./middlewares/authHandler');
 const notFoundHandler = require('./middlewares/notFoundHandler');
-
 const API = require('./api');
 const App  = require('./app');
+
+const server = express();
 
 const port = process.env.PORT || 3000;
 
@@ -38,4 +40,9 @@ server.use(notFoundHandler);
 // Middleware for errors
 server.use(errorHandler);
 
-server.listen(port, () => console.info('Server is running at:', port));
+// Create server with https
+https.createServer({
+    key: fs.readFileSync('server.key'),
+    cert: fs.readFileSync('server.cert')
+  }, server)
+.listen(port, () => console.info('Server is running at:', port));
