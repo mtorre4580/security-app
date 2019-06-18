@@ -1,5 +1,7 @@
 const pool = require('../utils/db');
 
+// Obs for SQL Injection https://github.com/mysqljs/mysql#escaping-query-values
+
 /**
  * Get all participants
  * @throws Error
