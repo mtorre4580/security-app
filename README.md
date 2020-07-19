@@ -1,10 +1,6 @@
-# App Seguridad Informática
+# security-app
 
-Aplicación de prueba para la materia seguridad Informática
-
-## Overview
-
-La aplicación fue desarrollada con Node, Express, Javascript, HTML, CSS.
+The application was developed with Node, Express, Javascript, HTML, CSS.
 
 ## Start App
 
@@ -20,15 +16,16 @@ App running in [https://localhost:3000](https://localhost:3000/)
 
 ## Security
 
-Se utilizan expresiones regulares para validar los forms tanto en la API como del lado del client. Se escapan tambien problemas de XSS, utilizando regex para evitar scripts entre los inputs, se utilizan queries `prepared stament` para evitar injección de SQL.
+Regular expressions are used to validate forms both on the API and on the client side. XSS problems are also escaped, using regex to avoid scripts between the inputs, `prepared stament` queries are used to avoid SQL injection.
+
 
 ## Configuration
 
-- La aplicación necesita tener el servicio de mysql corriendo, ya que se conecta para obtener los datos de los participantes.
-- Mock de datos de prueba `database.sql`
-- El certificado se creo con el siguiente comando ```openssl req -nodes -new -x509 -keyout server.key -out server.cert```
-- La API se encuentra segurizada contra un header `x-token``
-- La App para ingresar a `/participants`, tiene que estar logueado como user admin
+- The application needs to have the mysql service running, since it connects to obtain the data of the participants.
+- Mock test data `database.sql`
+- The certificate was created with the following command `` `openssl req -nodes -new -x509 -keyout server.key -out server.cert```
+- The API is secured against a header `x-token``
+- The App to enter `/ participants`, you must be logged in as user admin
 
 ## Views App
 
